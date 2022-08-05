@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <title>Artditya Music</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4" style="background-color:  #132743">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Artditya Music</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end ms-auto" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sholawat.html">Sholawat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lo-Fi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dangdut</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Global</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row justify-content-center ms-auto">
+        <div class="col-md-4 align-self-center mb-4">
+          <h1 class="text-center">Artditya Music</h1>
+          <p class="text-center">Streaming music stations that you can personalize</p>
+        </div>
+        <div class="col-md-4 offset-md-4">
+          <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 20rem">
+            <img id="track_image2" src="img/disc1-2.png" class="card-img-top rounded-square" alt="player" />
+            <div class="card text-center">
+              <div class="card">
+                <!--- song title & artist name --->
+                <img id="track_image2" />
+                <p id="title2">title.mp3</p>
+                <p id="artist2">Artist name</p>
+              </div>
+              <div class="card">
+                <!--- middle part --->
+                <div class="middle">
+                  <button onclick="previous_song()" id="pre2"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+                  <button onclick="justplay()" id="play2"><i class="fa fa-play" aria-hidden="true"></i></button>
+                  <button onclick="next_song()" id="next2"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+                </div>
+              </div>
+
+              <div class="card">
+                <!--- song duration part --->
+                <div class="duration">
+                  <input type="range" min="0" max="100" value="0" id="duration_slider2" onchange="change_duration()" />
+                </div>
+                <button id="auto2" onclick="autoplay_switch()">Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer text-white">Created with <i class="bi bi-heart-fill"></i></i> by <a href="index.html" class="fw-bold" title="KLIK">Aditya Dwi Nandra</a></div>
+    <!--- Add javascript file --->
+    <script src="script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
